@@ -37,6 +37,17 @@ Build a binary classification model that predicts whether a customer will churn.
 Logistic Regression achieved a PR-AUC of approximately **0.67**, with improved recall after threshold tuning.
 
 ## How to Run
+## Data Setup
+This repository does not include the raw dataset file.
+
+1. Download the Telco Customer Churn dataset (IBM sample dataset).
+2. Place the file in the following path:
+
+data/teleco_churn.csv
+
+Then run:
+
 ```bash
-df = pd.read_csv('data/teleco_churn.csv')
+python churn.py
+
 
