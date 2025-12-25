@@ -13,6 +13,12 @@ Target variable:
 ## Problem Statement
 Build a binary classification model that predicts whether a customer will churn.
 
+## Key Insights
+- Month-to-month contracts have significantly higher churn rates
+- Fiber optic internet users show higher churn probability
+- Customers with more subscribed services are less likely to churn
+- Threshold tuning improved recall for churned customers
+
 ## Modeling Approach
 - Data cleaning and feature engineering
 - Handling class imbalance
@@ -32,4 +38,5 @@ Logistic Regression achieved a PR-AUC of approximately **0.67**, with improved r
 
 ## How to Run
 ```bash
-python churn.py
+df = pd.read_csv('data/teleco_churn.csv')
+
